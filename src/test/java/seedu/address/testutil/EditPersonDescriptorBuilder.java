@@ -83,6 +83,10 @@ public class EditPersonDescriptorBuilder {
         return this;
     }
 
+    /**
+     * Parses the {@Code remark} into a {@code Remark} and set it to the {@code EditPersonDescriptor}
+     * that we are building.
+     */
     public EditPersonDescriptorBuilder withRemark(String remark) {
         descriptor.setRemark(new Remark(remark));
         return this;

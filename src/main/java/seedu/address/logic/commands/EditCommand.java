@@ -100,7 +100,7 @@ public class EditCommand extends Command {
         Address updatedAddress = editPersonDescriptor.getAddress().orElse(personToEdit.getAddress());
         Set<Tag> updatedTags = editPersonDescriptor.getTags().orElse(personToEdit.getTags());
         Remark updatedRemarks = editPersonDescriptor.getRemark().orElse(personToEdit.getRemark());
-        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedTags, updatedRemarks );
+        return new Person(updatedName, updatedPhone, updatedEmail, updatedAddress, updatedTags, updatedRemarks);
     }
 
     @Override
@@ -190,7 +190,9 @@ public class EditCommand extends Command {
             return Optional.ofNullable(address);
         }
 
-        public Optional<Remark> getRemark() {return Optional.ofNullable(remark);}
+        public Optional<Remark> getRemark() {
+            return Optional.ofNullable(remark);
+        }
 
         /**
          * Sets {@code tags} to this object's {@code tags}.

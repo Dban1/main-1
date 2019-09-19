@@ -123,7 +123,13 @@ public class ParserUtil {
         return tagSet;
     }
 
-    public static Remark parseRemark(String remark) throws  ParseException {
+    /**
+     * Parse remark from user input
+     * @param remark
+     * @return Remark object from user input
+     * @throws ParseException if error
+     */
+    public static Remark parseRemark(String remark) throws ParseException {
         requireNonNull(remark);
         Remark remarkObject = new Remark(remark);
         return remarkObject;
